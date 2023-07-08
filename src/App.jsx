@@ -1,5 +1,6 @@
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BsFacebook, BsLinkedin, BsWhatsapp, BsGithub } from "react-icons/bs";
+import { BiLinkExternal, BiLogoGithub } from "react-icons/bi";
 
 import "./index.css";
 
@@ -13,7 +14,7 @@ function App() {
         >
           <div
             data-aos="fade-right"
-            class="p-10 lg:w-[80%] lg:h-500px lg:self-center"
+            class="p-4 lg:p-10 lg:w-[80%] lg:h-500px lg:self-center"
           >
             <h1 class="text-sky-600 dark:text-sky-300 text-2xl font-bold tracking-widest leadinf-10">
               HOLA, SOY
@@ -68,15 +69,27 @@ function App() {
                 <BsGithub class="px-2"></BsGithub>
               </a>
             </div>
-            <div>
-              <a href="#contactos">
-                <button class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
-                  <span class="w-full h-full bg-gradient-to-br from-sky-500 via-sky-700 to-sky-900 group-hover:from-sky-900 group-hover:via-sky-700 group-hover:to-sky-500 absolute"></span>
-                  <span class="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
-                    <span class="relative text-white">CONTACTAME</span>
-                  </span>
-                </button>
-              </a>
+            <div class="flex flex-col lg:flex-row">
+              <div class="pb-4 lg:pr-4">
+                <a href="#contactos">
+                  <button class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
+                    <span class="w-full h-full bg-gradient-to-br from-sky-500 via-sky-700 to-sky-900 group-hover:from-sky-900 group-hover:via-sky-700 group-hover:to-sky-500 absolute"></span>
+                    <span class="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
+                      <span class="relative text-white">CONTACTAME</span>
+                    </span>
+                  </button>
+                </a>
+              </div>
+              <div>
+                <a href="#contactos">
+                  <button class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
+                    <span class="w-full h-full bg-gradient-to-br from-sky-500 via-sky-700 to-sky-900 group-hover:from-sky-900 group-hover:via-sky-700 group-hover:to-sky-500 absolute"></span>
+                    <span class="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
+                      <span class="relative text-white">DESCARGA MI CV</span>
+                    </span>
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
           {/*IMAGEN*/}
@@ -96,7 +109,7 @@ function App() {
             <h2 class="text-3xl text-slate-700 dark:text-white font-bold tracking-widest w-[85%] m-auto text-center pt-8">
               Experiencia Laboral
             </h2>
-            <section class="my-12 flex flex-col w-[84%] m-auto lg:flex-row lg:w-[87%] lg:my-28">
+            <section class="my-12 flex flex-col w-auto m-auto lg:flex-row lg:w-[87%] lg:my-28">
               <div class="flex justify-between lg:flex-col lg:w-[20%]">
                 <button
                   type="button"
@@ -272,47 +285,55 @@ function App() {
         {/*#4 SECCION PROYECTOS*/}
         <div id="proyectos">
           <div data-aos="fade-up">
-            <h3 class="text-3xl text-slate-700 dark:text-white my-5 px-12 font-bold tracking-widest md:text-center">
+            <h3 class="text-3xl text-slate-700 dark:text-white my-5 px-12 font-bold tracking-widest text-center">
               Mis Proyectos
             </h3>
 
-            <section class="my-12 flex flex-col items-center justify-center w-[90%] m-auto lg:flex-row lg:grid lg:grid-cols-2">
+            <section class="my-12 flex flex-col items-center justify-center w-auto m-auto lg:flex-row lg:grid lg:grid-cols-2">
               <div class="border-1 rounded-lg bg-white dark:bg-slate-800 m-5">
                 <div class="m-2">
                   <img
                     src="ceiba-sol.png"
                     alt=""
-                    class="opacity-80 hover:opacity-100"
+                    class="opacity-80 hover:opacity-100 transition delay-50"
                   />
                   <h4 class="font-bold my-2">CEIBA SOL S.A.S.</h4>
-                  <article class="flex justify-between grid grid-rows-2">
-                    <div class="flex flex-nowrap items-center">
-                      <span class="bg-[#f7e018] rounded-lg px-2 mr-2 text-slate-900">
+                  <article class="flex justify-between grid grid-rows-2 ">
+                    <div class="">
+                      <span class="bg-yellow-300 text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-yellow-300 border border-yellow-300">
                         Javascript
                       </span>
-                      <span class="bg-[#0ac3b3] rounded-lg px-2 mr-2 text-slate-100">
+
+                      <span class=" bg-[#0ac3b3] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-[#0ac3b3] border border-[#0ac3b3]">
                         TailwindCSS
                       </span>
 
-                      <span class="bg-[#62ddfd] rounded-lg px-2 mr-2 text-slate-900">
+                      <span class="bg-[#62ddfd] text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-[#62ddfd] border border-[#62ddfd]">
                         React
                       </span>
-                      <span class="bg-[#509646] rounded-lg px-2 mr-2 text-slate-100">
+
+                      <span class="bg-[#509646] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-[#509646] border border-[#509646]">
                         MongoDB
                       </span>
-                      <span class="bg-[#90c53f] rounded-lg px-2 mr-2 text-slate-900">
+
+                      <span class="bg-[#90c53f] text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-[#90c53f] border border-[#90c53f]">
                         NodeJs
                       </span>
                     </div>
-                    <div class="text-xl text-slate-600 dark:text-slate-200 pr-2 flex flex-nowrap">
-                      <a href="https://github.com/CeibaSol/" target="_blank">
-                        <i class="bi bi-github px-2"></i>
+                    <div class="flex flex-row ">
+                      <a
+                        href="https://github.com/CeibaSol/"
+                        target="_blank"
+                        class="p-1 text-2xl text-slate-600 dark:text-slate-200"
+                      >
+                        <BiLogoGithub class="transition delay-150 hover:scale-125"></BiLogoGithub>
                       </a>
                       <a
                         href="https://ceiba-sol-fe.vercel.app/"
                         target="_blank"
+                        class="p-1 text-2xl text-slate-600 dark:text-slate-200"
                       >
-                        <i class="bi bi-eye px-2"></i>
+                        <BiLinkExternal class="transition delay-150 hover:scale-125"></BiLinkExternal>
                       </a>
                     </div>
                   </article>
@@ -324,63 +345,38 @@ function App() {
                   <img
                     src="app-presupuesto.png"
                     alt=""
-                    class="opacity-80 hover:opacity-100"
+                    class="opacity-80 hover:opacity-100 transition delay-50"
                   />
                   <h4 class="font-bold my-2">APLICACION CALCULO PRESUPUESTO</h4>
                   <article class="flex justify-between grid grid-rows-2">
                     <div class="flex flex-nowrap items-center">
-                      <span class="bg-[#007acc] rounded-lg px-2 mr-2 text-slate-100">
+                      <span class="bg-[#007acc] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-blue-200  border border-[#007acc]">
                         TypeScript
                       </span>
-                      <span class="bg-violet-800 rounded-lg px-2 mr-2 text-slate-100">
+
+                      <span class="bg-violet-800 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-violet-300 border border-violet-800">
                         CSS
                       </span>
 
-                      <span class="bg-[#c3002f] rounded-lg px-2 mr-2 text-slate-100">
+                      <span class="bg-[#c3002f] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-red-200 border border-[#c3002f]">
                         Angular
                       </span>
                     </div>
-                    <div class="text-xl text-slate-600 dark:text-slate-200 pr-2 flex flex-nowrap">
-                      <a href="https://github.com/CeibaSol/" target="_blank">
-                        <i class="bi bi-github px-2"></i>
+
+                    <div class="flex flex-row ">
+                      <a
+                        href="https://github.com/Goster210/Presupuesto-app"
+                        target="_blank"
+                        class="p-1 text-2xl text-slate-600 dark:text-slate-200"
+                      >
+                        <BiLogoGithub class="transition delay-150 hover:scale-125"></BiLogoGithub>
                       </a>
                       <a
-                        href="https://ceiba-sol-fe.vercel.app/"
+                        href="https://presupuesto-app-zeta.vercel.app/"
                         target="_blank"
+                        class="p-1 text-2xl text-slate-600 dark:text-slate-200"
                       >
-                        <i class="bi bi-eye px-2"></i>
-                      </a>
-                    </div>
-                  </article>
-                </div>
-              </div>
-
-              <div class="border-1 rounded-lg bg-white dark:bg-slate-800 m-5">
-                <div class="m-2">
-                  <img
-                    src="icono.png"
-                    alt=""
-                    class="opacity-80 hover:opacity-100"
-                  />
-                  <h4 class="font-bold my-2">ARTWEB - UI DESIGN</h4>
-                  <article class="flex justify-between grid grid-rows-2">
-                    <div class="flex flex-nowrap items-center">
-                      <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">
-                        HTML
-                      </span>
-                      <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">
-                        SASS
-                      </span>
-                      <span class="bg-slate-200 rounded-lg px-2 mr-2 text-slate-700">
-                        JS
-                      </span>
-                    </div>
-                    <div class="text-xl text-slate-600 dark:text-slate-200 pr-2 flex flex-nowrap">
-                      <a href="">
-                        <i class="bi bi-github px-2"></i>
-                      </a>
-                      <a href="">
-                        <i class="bi bi-eye px-2"></i>
+                        <BiLinkExternal class="transition delay-150 hover:scale-125"></BiLinkExternal>
                       </a>
                     </div>
                   </article>
@@ -404,7 +400,7 @@ function App() {
                     type="email"
                     name="email"
                     id="email"
-                    class="p-3 w-full rounded-lg focus:outline-none focus:ring focus:ring-blue-400"
+                    class="p-3 w-full rounded-lg focus:outline-none focus:ring focus:ring-blue-400 dark:text-black"
                   />
                 </div>
 
@@ -414,7 +410,7 @@ function App() {
                     name="nombre"
                     id="nombre"
                     placeholder="Nombre"
-                    class="p-3 w-full rounded-lg focus:outline-none focus:ring focus:ring-blue-400"
+                    class="p-3 w-full rounded-lg focus:outline-none focus:ring focus:ring-blue-400 dark:text-black"
                   />
                 </div>
 
@@ -424,7 +420,7 @@ function App() {
                     id="msj"
                     rows="5"
                     placeholder="Mensaje"
-                    class="p-3 w-full rounded-lg focus:outline-none focus:ring focus:ring-blue-400"
+                    class="p-3 w-full rounded-lg focus:outline-none focus:ring focus:ring-blue-400 dark:text-black"
                   ></textarea>
                 </div>
                 <div class="my-3">
@@ -436,18 +432,43 @@ function App() {
 
               <footer class="text-center mt-12 mb-5">
                 <p class="hover:text-sky-500">Juan José Rincón</p>
-                <div class="my-2">
-                  <a href="">
-                    <i class="bi bi-twitter hover:text-sky-500 px-2"></i>
+
+                {/*REDES SOCIALES*/}
+                <div class="text-center flex justify-center py-2 flex flex-row">
+                  <a
+                    href="https://www.instagram.com/juanjose.rincon/"
+                    target="_blank"
+                    class="pr-1 text-5xl text-[#E1306C] hover:text-sky-600"
+                  >
+                    <AiOutlineInstagram class="px-2"></AiOutlineInstagram>
                   </a>
-                  <a href="">
-                    <i class="bi bi-instagram hover:text-sky-500 px-2"></i>
+                  <a
+                    href="https://www.facebook.com/juanjose.rinconbalaguera"
+                    target="_blank"
+                    class="pr-1 text-5xl text-[#3b5998] hover:text-sky-300 "
+                  >
+                    <BsFacebook class="px-2"></BsFacebook>
                   </a>
-                  <a href="">
-                    <i class="bi bi-linkedin hover:text-sky-500 px-2"></i>
+                  <a
+                    href="https://www.linkedin.com/in/juan-jos%C3%A9-rinc%C3%B3n-balaguera-b385a8149/"
+                    target="_blank"
+                    class="pr-1 text-5xl text-sky-600 hover:text-sky-300 "
+                  >
+                    <BsLinkedin class="px-2"></BsLinkedin>
                   </a>
-                  <a href="">
-                    <i class="bi bi-github hover:text-sky-500 px-2"></i>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=573125880706&text=Hola,%Juan%Jose"
+                    target="_blank"
+                    class="pr-1 text-5xl text-[#2BB741] hover:text-sky-600 "
+                  >
+                    <BsWhatsapp class="px-2"></BsWhatsapp>
+                  </a>
+                  <a
+                    href="https://github.com/goster210"
+                    target="_blank"
+                    class="pr-1 text-5xl text-violet-500 hover:text-sky-600 "
+                  >
+                    <BsGithub class="px-2"></BsGithub>
                   </a>
                 </div>
               </footer>

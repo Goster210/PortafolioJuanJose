@@ -40,7 +40,7 @@ export default function NavBar() {
   return (
     <>
       <header className="border-b-2 border-sky-600">
-        <nav class="flex justify-between  m-auto px-10 text-lg font-medium tracking-widest md:items-center ">
+        <nav class="flex justify-between m-auto md:px-10 text-lg font-medium tracking-widest md:items-center ">
           <a href="">
             <img src="logo.png" alt="" width={100}></img>
           </a>
@@ -136,13 +136,13 @@ export default function NavBar() {
           </div>
           <button
             id="menu-buttom"
-            class="absolute top-10 right-12 md:hidden"
+            class="absolute top-10 right-4 md:hidden"
             onClick={() => handleClick()}
           >
             {click ? (
-              <AiOutlineClose class="w-[30px] h-[30px] mt-2"></AiOutlineClose>
+              <AiOutlineClose class="w-[20px] h-[20px]"></AiOutlineClose>
             ) : (
-              <AiOutlineMenu class="w-[30px] h-[30px] mt-2"></AiOutlineMenu>
+              <AiOutlineMenu class="w-[20px] h-[20px]"></AiOutlineMenu>
             )}
           </button>
         </nav>
