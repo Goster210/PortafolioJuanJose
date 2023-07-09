@@ -1,10 +1,33 @@
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BsFacebook, BsLinkedin, BsWhatsapp, BsGithub } from "react-icons/bs";
 import { BiLinkExternal, BiLogoGithub } from "react-icons/bi";
+import { useState } from "react";
+import ContactoApi from "./api/sendMail";
 
 import "./index.css";
 
 function App() {
+  const [email, setEmail] = useState("");
+  const [nombre, setNombre] = useState("");
+  const [mensaje, setMensaje] = useState("");
+
+  const data = {
+    email,
+    nombre,
+    mensaje,
+  };
+
+  const limpiarCampos = () => {
+    setEmail("");
+    setNombre("");
+    setMensaje("");
+  };
+
+  const sendEmail = () => {
+    alert('Pendiente')
+    limpiarCampos();
+  };
+
   return (
     <>
       <main>
@@ -55,7 +78,7 @@ function App() {
                 <BsLinkedin class="px-2"></BsLinkedin>
               </a>
               <a
-                href="https://api.whatsapp.com/send?phone=573125880706&text=Hola,%Juan%Jose"
+                href="https://api.whatsapp.com/send?phone=573125880706&text=Hola"
                 target="_blank"
                 class="pr-1 text-4xl hover:text-sky-600 animate-bounce"
               >
@@ -81,7 +104,7 @@ function App() {
                 </a>
               </div>
               <div>
-                <a href="cv.pdf" download="Hoja de Vida - Juan José Rincón">
+                <a href="CV - Juan Jose Rincon .pdf" download="Hoja de Vida - Juan José Rincón">
                   <button class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
                     <span class="w-full h-full bg-gradient-to-br from-sky-500 via-sky-700 to-sky-900 group-hover:from-sky-900 group-hover:via-sky-700 group-hover:to-sky-500 absolute"></span>
                     <span class="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
@@ -473,15 +496,17 @@ function App() {
               Contáctame
             </h3>
 
-            <section class="flex flex-col w-[90%] m-auto" id="contacto">
-              <form action="" class="w-[90%] md:max-w-[600px] m-auto">
+            <section class="flex flex-col w-[90%] m-auto">
+              <div class="w-[90%] md:max-w-[600px] m-auto">
                 <div>
                   <input
                     placeholder="info@ejemplo.com"
                     type="email"
                     name="email"
                     id="email"
+                    value={email}
                     class="p-3 w-full rounded-lg focus:outline-none focus:ring focus:ring-blue-400 dark:text-black"
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
 
@@ -490,8 +515,10 @@ function App() {
                     type="text"
                     name="nombre"
                     id="nombre"
+                    value={nombre}
                     placeholder="Nombre"
                     class="p-3 w-full rounded-lg focus:outline-none focus:ring focus:ring-blue-400 dark:text-black"
+                    onChange={(e) => setNombre(e.target.value)}
                   />
                 </div>
 
@@ -499,17 +526,22 @@ function App() {
                   <textarea
                     name="msj"
                     id="msj"
+                    value={mensaje}
                     rows="5"
                     placeholder="Mensaje"
                     class="p-3 w-full rounded-lg focus:outline-none focus:ring focus:ring-blue-400 dark:text-black"
+                    onChange={(e) => setMensaje(e.target.value)}
                   ></textarea>
                 </div>
                 <div class="my-3">
-                  <button class="bg-sky-600 text-white p-3 w-full rounded-lg text-xl tracking-widest">
+                  <button
+                    class="bg-sky-600 text-white p-3 w-full rounded-lg text-xl tracking-widest"
+                    onClick={() => sendEmail()}
+                  >
                     Enviar Mensaje
                   </button>
                 </div>
-              </form>
+              </div>
 
               <footer class="text-center mt-12 mb-5">
                 <p class="hover:text-sky-500">Juan José Rincón</p>
@@ -538,7 +570,7 @@ function App() {
                     <BsLinkedin class="px-2"></BsLinkedin>
                   </a>
                   <a
-                    href="https://api.whatsapp.com/send?phone=573125880706&text=Hola,%Juan%Jose"
+                    href="https://api.whatsapp.com/send?phone=573125880706&text=Hola"
                     target="_blank"
                     class="pr-1 text-5xl text-[#2BB741] hover:text-sky-600 "
                   >
