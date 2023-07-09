@@ -104,7 +104,7 @@ function App() {
                 </a>
               </div>
               <div>
-                <a href="CV - Juan Jose Rincon .pdf" download="Hoja de Vida - Juan José Rincón">
+                <a href="JuanJoseRincon.pdf" download="Hoja de Vida - Juan José Rincón">
                   <button class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
                     <span class="w-full h-full bg-gradient-to-br from-sky-500 via-sky-700 to-sky-900 group-hover:from-sky-900 group-hover:via-sky-700 group-hover:to-sky-500 absolute"></span>
                     <span class="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
