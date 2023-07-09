@@ -81,7 +81,7 @@ function App() {
                 </a>
               </div>
               <div>
-                <a href="#contactos">
+                <a href="cv.pdf" download="Hoja de Vida - Juan José Rincón">
                   <button class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
                     <span class="w-full h-full bg-gradient-to-br from-sky-500 via-sky-700 to-sky-900 group-hover:from-sky-900 group-hover:via-sky-700 group-hover:to-sky-500 absolute"></span>
                     <span class="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
@@ -103,8 +103,79 @@ function App() {
             ></div>
           </div>
         </section>
+        {/*Tecnologias*/}
+        <h2 class="text-3xl text-slate-700 dark:text-white font-bold tracking-widest w-[85%] m-auto text-center pt-8">
+          Tecnologias
+        </h2>
+        <div class="m-4 lg:m-20">
+          <section class="grid grid-cols-3 lg:grid-cols-4">
+            <div data-aos="zoom-in" class="m-4 lg:mx-20 lg;my-8">
+              <img
+                class="transition delay-150 hover:scale-125 rounded rounded-lg"
+                src="javascriptlogo.png"
+              ></img>
+            </div>
+            <div data-aos="zoom-in" class="m-4 lg:mx-20 lg;my-8">
+              <img
+                class="transition delay-150 hover:scale-125"
+                src="htmllogo.png"
+              ></img>
+            </div>
+            <div data-aos="zoom-in" class="m-4 lg:mx-20 lg;my-8">
+              <img
+                class="transition delay-150 hover:scale-125"
+                src="csslogo.png"
+              ></img>
+            </div>
+            <div data-aos="zoom-in" class="m-4 lg:mx-20 lg;my-8">
+              <img
+                class="transition delay-150 hover:scale-125 rounded rounded-lg"
+                src="typescriptlogo.png"
+              ></img>
+            </div>
+            <div data-aos="zoom-in" class="m-4 lg:mx-20 lg;my-8">
+              <img
+                class="transition delay-150 hover:scale-125"
+                src="angularicono.png"
+              ></img>
+            </div>
+            <div data-aos="zoom-in" class="m-4 lg:mx-20 lg;my-8">
+              <img
+                class="transition delay-150 hover:scale-125"
+                src="reacticono.png"
+              ></img>
+            </div>
+            <div data-aos="zoom-in" class="m-4 lg:mx-20 lg;my-8">
+              <img
+                class="transition delay-150 hover:scale-125"
+                src="javalogo.png"
+              ></img>
+            </div>
+
+            <div data-aos="zoom-in" class="m-4 lg:mx-20 lg;my-8">
+              <img
+                class="transition delay-150 hover:scale-125"
+                src="csharp.png"
+              ></img>
+            </div>
+
+            <div data-aos="zoom-in" class="m-4 lg:mx-20 lg;my-8">
+              <img
+                class="transition delay-150 hover:scale-125"
+                src="tailwind.png"
+              ></img>
+            </div>
+
+            <div data-aos="zoom-in" class="m-4 lg:mx-20 lg;my-8">
+              <img
+                class="transition delay-150 hover:scale-125"
+                src="bootstrapicono.png"
+              ></img>
+            </div>
+          </section>
+        </div>
         {/*EXPERIENCIA LABORAL*/}
-        <div id="experiencia">
+        <div id="experiencia" class="hidden">
           <div data-aos="fade-up">
             <h2 class="text-3xl text-slate-700 dark:text-white font-bold tracking-widest w-[85%] m-auto text-center pt-8">
               Experiencia Laboral
@@ -295,30 +366,36 @@ function App() {
                   <img
                     src="ceiba-sol.png"
                     alt=""
-                    class="opacity-80 hover:opacity-100 transition delay-50"
+                    class="rounded-[15px] opacity-80 hover:opacity-100 transition delay-50"
                   />
                   <h4 class="font-bold my-2">CEIBA SOL S.A.S.</h4>
                   <article class="flex justify-between grid grid-rows-2 ">
-                    <div class="">
-                      <span class="bg-yellow-300 text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-yellow-300 border border-yellow-300">
-                        Javascript
-                      </span>
-
-                      <span class=" bg-[#0ac3b3] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-[#0ac3b3] border border-[#0ac3b3]">
-                        TailwindCSS
-                      </span>
-
-                      <span class="bg-[#62ddfd] text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-[#62ddfd] border border-[#62ddfd]">
-                        React
-                      </span>
-
-                      <span class="bg-[#509646] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-[#509646] border border-[#509646]">
-                        MongoDB
-                      </span>
-
-                      <span class="bg-[#90c53f] text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-[#90c53f] border border-[#90c53f]">
-                        NodeJs
-                      </span>
+                    <div class="flex flex-wrap">
+                      <div>
+                        <span class="bg-yellow-300 text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-yellow-300 border border-yellow-300">
+                          Javascript
+                        </span>
+                      </div>
+                      <div>
+                        <span class=" bg-[#0ac3b3] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-[#0ac3b3] border border-[#0ac3b3]">
+                          TailwindCSS
+                        </span>
+                      </div>
+                      <div>
+                        <span class="bg-[#62ddfd] text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-[#62ddfd] border border-[#62ddfd]">
+                          React
+                        </span>
+                      </div>
+                      <div>
+                        <span class="bg-[#509646] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-lime-500 border border-[#509646]">
+                          MongoDB
+                        </span>
+                      </div>
+                      <div>
+                        <span class="bg-[#90c53f] text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-[#90c53f] border border-[#90c53f]">
+                          NodeJs
+                        </span>
+                      </div>
                     </div>
                     <div class="flex flex-row ">
                       <a
@@ -345,22 +422,26 @@ function App() {
                   <img
                     src="app-presupuesto.png"
                     alt=""
-                    class="opacity-80 hover:opacity-100 transition delay-50"
+                    class="rounded-[15px] opacity-80 hover:opacity-100 transition delay-50"
                   />
                   <h4 class="font-bold my-2">APLICACION CALCULO PRESUPUESTO</h4>
-                  <article class="flex justify-between grid grid-rows-2">
-                    <div class="flex flex-nowrap items-center">
-                      <span class="bg-[#007acc] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-blue-200  border border-[#007acc]">
-                        TypeScript
-                      </span>
-
-                      <span class="bg-violet-800 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-violet-300 border border-violet-800">
-                        CSS
-                      </span>
-
-                      <span class="bg-[#c3002f] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-red-200 border border-[#c3002f]">
-                        Angular
-                      </span>
+                  <article class="flex justify-between grid grid-rows-2 ">
+                    <div class="flex flex-wrap">
+                      <div>
+                        <span class="bg-[#007acc] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-blue-200  border border-[#007acc]">
+                          TypeScript
+                        </span>
+                      </div>
+                      <div>
+                        <span class="bg-violet-800 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-violet-300 border border-violet-800">
+                          CSS
+                        </span>
+                      </div>
+                      <div>
+                        <span class="bg-[#c3002f] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-red-200 border border-[#c3002f]">
+                          Angular
+                        </span>
+                      </div>
                     </div>
 
                     <div class="flex flex-row ">

@@ -57,9 +57,12 @@ export default function NavBar() {
                 <li class="md:px-10 md:flex md:items-center hover:text-sky-600">
                   <a href="#quienSoy">¿Quien soy?</a>
                 </li>
-                <li class="md:px-10 md:flex md:items-center hover:text-sky-600">
+                {/*
+                <li class="hidden md:px-10 md:flex md:items-center hover:text-sky-600">
                   <a href="#experiencia">Experiencia</a>
                 </li>
+              */}
+          
                 <li class="md:px-10 md:flex md:items-center hover:text-sky-600">
                   <a href="#proyectos">Proyectos</a>
                 </li>
@@ -102,9 +105,12 @@ export default function NavBar() {
               <li class="md:px-10 md:flex md:items-center hover:text-sky-600">
                 <a href="#quienSoy">¿Quien soy?</a>
               </li>
-              <li class="md:px-10 md:flex md:items-center hover:text-sky-600">
+              {/*
+              <li class="hidden md:px-10 md:flex md:items-center hover:text-sky-600">
                 <a href="#experiencia">Experiencia</a>
               </li>
+          */}
+              
               <li class="md:px-10 md:flex md:items-center hover:text-sky-600">
                 <a href="#proyectos">Proyectos</a>
               </li>
