@@ -24,7 +24,7 @@ function App() {
   };
 
   const sendEmail = () => {
-    alert('Pendiente')
+    alert("Pendiente");
     limpiarCampos();
   };
 
@@ -50,8 +50,8 @@ function App() {
               conocimientos
             </p>
             <p class="mt-5 text-lg ">
-              Actualmente estudio Ingenieria de sistemas y computacion, estoy
-              terminando mi carrera, me gusta el desarollar aplicaciones de todo
+              Actualmente, estudio Ingeniería de sistemas y computación, estoy
+              terminando mi carrera, y me gusta desarrollar aplicaciones de todo
               tipo.
             </p>
             {/*REDES SOCIALES*/}
@@ -98,13 +98,16 @@ function App() {
                   <button class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
                     <span class="w-full h-full bg-gradient-to-br from-sky-500 via-sky-700 to-sky-900 group-hover:from-sky-900 group-hover:via-sky-700 group-hover:to-sky-500 absolute"></span>
                     <span class="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
-                      <span class="relative text-white">CONTACTAME</span>
+                      <span class="relative text-white">CONTÁCTAME</span>
                     </span>
                   </button>
                 </a>
               </div>
               <div>
-                <a href="JuanJoseRincon.pdf" download="Hoja de Vida - Juan José Rincón">
+                <a
+                  href="JuanJoseRincon.pdf"
+                  download="Hoja de Vida - Juan José Rincón"
+                >
                   <button class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
                     <span class="w-full h-full bg-gradient-to-br from-sky-500 via-sky-700 to-sky-900 group-hover:from-sky-900 group-hover:via-sky-700 group-hover:to-sky-500 absolute"></span>
                     <span class="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
@@ -118,7 +121,7 @@ function App() {
           {/*IMAGEN*/}
           <div
             data-aos="zoom-in"
-            class="w-full h-full flex justify-center items-center"
+            class="w-full h-full flex justify-center items-center my-6 lg:my-0"
           >
             <div
               class="w-[300px] h-[300px] m-auto bg-[url('./img/fotoperfil.jpg')] bg-cover rounded-full lg:w-[480px] lg:h-[480px]
@@ -126,76 +129,98 @@ function App() {
             ></div>
           </div>
         </section>
-        {/*Tecnologias*/}
-        <h2 class="text-3xl text-slate-700 dark:text-white font-bold tracking-widest w-[85%] m-auto text-center pt-8">
-          Tecnologias
-        </h2>
-        <div class="m-4 lg:m-20">
-          <section class="grid grid-cols-3 lg:grid-cols-4">
-            <div data-aos="zoom-in" class="m-4 lg:mx-20 lg;my-8">
-              <img
-                class="transition delay-150 hover:scale-125 rounded rounded-lg"
-                src="javascriptlogo.png"
-              ></img>
-            </div>
-            <div data-aos="zoom-in" class="m-4 lg:mx-20 lg;my-8">
-              <img
-                class="transition delay-150 hover:scale-125"
-                src="htmllogo.png"
-              ></img>
-            </div>
-            <div data-aos="zoom-in" class="m-4 lg:mx-20 lg;my-8">
-              <img
-                class="transition delay-150 hover:scale-125"
-                src="csslogo.png"
-              ></img>
-            </div>
-            <div data-aos="zoom-in" class="m-4 lg:mx-20 lg;my-8">
-              <img
-                class="transition delay-150 hover:scale-125 rounded rounded-lg"
-                src="typescriptlogo.png"
-              ></img>
-            </div>
-            <div data-aos="zoom-in" class="m-4 lg:mx-20 lg;my-8">
-              <img
-                class="transition delay-150 hover:scale-125"
-                src="angularicono.png"
-              ></img>
-            </div>
-            <div data-aos="zoom-in" class="m-4 lg:mx-20 lg;my-8">
-              <img
-                class="transition delay-150 hover:scale-125"
-                src="reacticono.png"
-              ></img>
-            </div>
-            <div data-aos="zoom-in" class="m-4 lg:mx-20 lg;my-8">
-              <img
-                class="transition delay-150 hover:scale-125"
-                src="javalogo.png"
-              ></img>
-            </div>
+        {/*Tecnologías*/}
+        <div id="tecnologias">
+          <div
+            data-aos="fade-up"
+            class="flex items-center items-center justify-center"
+          >
+            <h3 class=" text-3xl text-slate-700 dark:text-white my-5 px-12 py-4 lg:py-2 font-bold tracking-widest text-center border-y-4 border-sky-600">
+              Tecnologías
+            </h3>
+          </div>
 
-            <div data-aos="zoom-in" class="m-4 lg:mx-20 lg;my-8">
-              <img
-                class="transition delay-150 hover:scale-125"
-                src="csharp.png"
-              ></img>
-            </div>
+          <div class="m-8 lg:mx-20 lg:my-10">
+            <section class="grid grid-cols-3 lg:grid-cols-4">
+              <div data-aos="zoom-in" class="m-4 lg:mx-20 lg:my-8">
+                <img
+                  class="transition delay-150 hover:scale-125 rounded rounded-lg"
+                  src="javascriptlogo.png"
+                ></img>
+              </div>
+              <div data-aos="zoom-in" class="m-4 lg:mx-20 lg:my-8">
+                <img
+                  class="transition delay-150 hover:scale-125"
+                  src="htmllogo.png"
+                ></img>
+              </div>
+              <div data-aos="zoom-in" class="m-4 lg:mx-20 lg:my-8">
+                <img
+                  class="transition delay-150 hover:scale-125"
+                  src="csslogo.png"
+                ></img>
+              </div>
+              <div data-aos="zoom-in" class="m-4 lg:mx-20 lg:my-8">
+                <img
+                  class="transition delay-150 hover:scale-125 rounded rounded-lg"
+                  src="typescriptlogo.png"
+                ></img>
+              </div>
+              <div data-aos="zoom-in" class="m-4 lg:mx-20 lg:my-8">
+                <img
+                  class="transition delay-150 hover:scale-125"
+                  src="angularicono.png"
+                ></img>
+              </div>
+              <div data-aos="zoom-in" class="m-4 lg:mx-20 lg:my-8">
+                <img
+                  class="transition delay-150 hover:scale-125"
+                  src="reacticono.png"
+                ></img>
+              </div>
+              <div data-aos="zoom-in" class="m-4 lg:mx-20 lg:my-8">
+                <img
+                  class="transition delay-150 hover:scale-125"
+                  src="javalogo.png"
+                ></img>
+              </div>
 
-            <div data-aos="zoom-in" class="m-4 lg:mx-20 lg;my-8">
-              <img
-                class="transition delay-150 hover:scale-125"
-                src="tailwind.png"
-              ></img>
-            </div>
+              <div data-aos="zoom-in" class="m-4 lg:mx-20 lg:my-8">
+                <img
+                  class="transition delay-150 hover:scale-125"
+                  src="csharp.png"
+                ></img>
+              </div>
 
-            <div data-aos="zoom-in" class="m-4 lg:mx-20 lg;my-8">
-              <img
-                class="transition delay-150 hover:scale-125"
-                src="bootstrapicono.png"
-              ></img>
-            </div>
-          </section>
+              <div data-aos="zoom-in" class="m-4 lg:mx-20 lg:my-8">
+                <img
+                  class="transition delay-150 hover:scale-125"
+                  src="tailwind.png"
+                ></img>
+              </div>
+
+              <div data-aos="zoom-in" class="m-4 lg:mx-20 lg:my-8">
+                <img
+                  class="transition delay-150 hover:scale-125"
+                  src="bootstrapicono.png"
+                ></img>
+              </div>
+
+              <div data-aos="zoom-in" class="m-4 lg:mx-20 lg:my-8">
+                <img
+                  class="transition delay-150 hover:scale-125"
+                  src="nodejslogo.png"
+                ></img>
+              </div>
+
+              <div data-aos="zoom-in" class="m-4 lg:mx-20 lg:my-8">
+                <img
+                  class="transition delay-150 hover:scale-125"
+                  src="mongodblogo.png"
+                ></img>
+              </div>
+            </section>
+          </div>
         </div>
         {/*EXPERIENCIA LABORAL*/}
         <div id="experiencia" class="hidden">
@@ -378,13 +403,21 @@ function App() {
         </div>
         {/*#4 SECCION PROYECTOS*/}
         <div id="proyectos">
-          <div data-aos="fade-up">
-            <h3 class="text-3xl text-slate-700 dark:text-white my-5 px-12 font-bold tracking-widest text-center">
-              Mis Proyectos
-            </h3>
+          <div>
+            <div
+              data-aos="fade-up"
+              class="flex items-center items-center justify-center"
+            >
+              <h3 class=" text-3xl text-slate-700 dark:text-white my-5 px-12 py-4 lg:py-2 font-bold tracking-widest text-center border-y-4 border-sky-600">
+                Mis Proyectos
+              </h3>
+            </div>
 
-            <section class="my-12 flex flex-col items-center justify-center w-auto m-auto lg:flex-row lg:grid lg:grid-cols-2">
-              <div class="border-1 rounded-lg bg-white dark:bg-slate-800 m-5">
+            <section class="my-6 flex flex-col items-center justify-center w-auto m-auto lg:flex-row lg:grid lg:grid-cols-2">
+              <div
+                data-aos="fade-right"
+                class="border-1 rounded-lg bg-white dark:bg-slate-800 m-5"
+              >
                 <div class="m-2">
                   <img
                     src="ceiba-sol.png"
@@ -440,14 +473,19 @@ function App() {
                 </div>
               </div>
 
-              <div class="border-1 rounded-lg bg-white dark:bg-slate-800 m-5">
+              <div
+                data-aos="fade-left"
+                class="border-1 rounded-lg bg-white dark:bg-slate-800 m-5"
+              >
                 <div class="m-2">
                   <img
                     src="app-presupuesto.png"
                     alt=""
                     class="rounded-[15px] opacity-80 hover:opacity-100 transition delay-50"
                   />
-                  <h4 class="font-bold my-2">APLICACION CALCULO PRESUPUESTO</h4>
+                  <h4 class="font-bold my-2">
+                    APLICACIÓN CALCULO DE PRESUPUESTO
+                  </h4>
                   <article class="flex justify-between grid grid-rows-2 ">
                     <div class="flex flex-wrap">
                       <div>
@@ -492,12 +530,14 @@ function App() {
         {/*#4 SECCION CONTACTOS*/}
         <div id="contactos">
           <div data-aos="fade-up">
-            <h3 class="text-3xl text-slate-700 dark:text-white mt-12 mb-10 px-10 font-bold tracking-widest text-center">
-              Contáctame
-            </h3>
+            <div class="flex items-center items-center justify-center">
+              <h3 class=" text-3xl text-slate-700 dark:text-white my-5 px-12 py-4 lg:py-2 font-bold tracking-widest text-center border-y-4 border-sky-600">
+                Contáctame
+              </h3>
+            </div>
 
             <section class="flex flex-col w-[90%] m-auto">
-              <div class="w-[90%] md:max-w-[600px] m-auto">
+              <div class="w-[90%] md:max-w-[600px] m-auto mt-12">
                 <div>
                   <input
                     placeholder="info@ejemplo.com"
@@ -535,7 +575,7 @@ function App() {
                 </div>
                 <div class="my-3">
                   <button
-                    class="bg-sky-600 text-white p-3 w-full rounded-lg text-xl tracking-widest"
+                    class="bg-sky-600 hover:bg-sky-700 transition delay-100 text-white p-3 w-full rounded-lg text-xl tracking-widest "
                     onClick={() => sendEmail()}
                   >
                     Enviar Mensaje
