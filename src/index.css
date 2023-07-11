@@ -14,6 +14,11 @@ absolute {
   transition: visibility 0s, opacity 0.2s linear;
 }
 
+
+.group-hover\:block:hover {
+  display: block !important;
+}
+
 .escrituraEfecto {
   display: block;
   font-family: monospace;
@@ -33,6 +38,7 @@ absolute {
   @keyFrames blink {
    50% { border-color: transparent}
   }
+  
 
 
 /*
