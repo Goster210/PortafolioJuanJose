@@ -104,23 +104,23 @@ export default function NavBar() {
             md:dark:bg-slate-800 hidden md:block"
           >
             <ul class="flex h-5/6 flex-col justify-around md:flex-row md:justify-center w-full">
-              <li class="md:px-10 md:flex md:items-center hover:text-sky-600">
-                <a href="#quienSoy">¿Quién soy?</a>
+              <li class="md:mx-10 md:flex md:items-center hover:text-sky-600">
+                <a class="hover:border-2 border-sky-50 hover:border-b-sky-500 dark:border-slate-800 dark:hover:border-b-sky-500 transition delay-150" href="#quienSoy">¿Quién soy?</a>
               </li>
               {/*
               <li class="hidden md:px-10 md:flex md:items-center hover:text-sky-600">
                 <a href="#experiencia">Experiencia</a>
               </li>
           */}
-              <li class="md:px-10 md:flex md:items-center hover:text-sky-600">
-                <a href="#tecnologias">Tecnologías</a>
+              <li class="md:mx-10 md:flex md:items-center hover:text-sky-600">
+              <a class="hover:border-2 border-sky-50 hover:border-b-sky-500 dark:border-slate-800 dark:hover:border-b-sky-500 transition delay-150" href="#tecnologias">Tecnologías</a>
               </li>
 
-              <li class="md:px-10 md:flex md:items-center hover:text-sky-600">
-                <a href="#proyectos">Proyectos</a>
+              <li class="md:mx-10 md:flex md:items-center hover:text-sky-600">
+              <a class="hover:border-2 border-sky-50 hover:border-b-sky-500 dark:border-slate-800 dark:hover:border-b-sky-500 transition delay-150" href="#proyectos">Proyectos</a>
               </li>
-              <li class="md:px-10 md:flex md:items-center hover:text-sky-600">
-                <a href="#contactos">Contacto</a>
+              <li class="md:mx-10 md:flex md:items-center hover:text-sky-600">
+              <a class="hover:border-2 border-sky-50 hover:border-b-sky-500 dark:border-slate-800 dark:hover:border-b-sky-500 transition delay-150" href="#contactos">Contacto</a>
               </li>
             </ul>
           </div>

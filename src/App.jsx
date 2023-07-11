@@ -15,7 +15,6 @@ import emailjs from "@emailjs/browser";
 import "./index.css";
 
 function App() {
-
   const [email, setEmail] = useState("");
   const [nombre, setNombre] = useState("");
   const [mensaje, setMensaje] = useState("");
@@ -153,10 +152,12 @@ function App() {
             data-aos="zoom-in"
             class="w-full h-full flex justify-center items-center my-6 lg:my-0"
           >
-            <div
-              class="w-[300px] h-[300px] m-auto bg-[url('./img/fotoperfil.jpg')] bg-cover rounded-full lg:w-[480px] lg:h-[480px]
-            lg:bg-center lg:bg-no-repeat lg:bg[lenght:617px_840px] border-4 border-sky-600 hover:animate-pulse"
-            ></div>
+            <div class="border-4 border-sky-600 rounded-full ">
+              <div
+                class="w-[300px] h-[300px] m-auto bg-[url('./img/fp.jpg')] bg-cover rounded-full lg:w-[480px] lg:h-[480px]
+            lg:bg-center lg:bg-no-repeat lg:bg[lenght:617px_840px] saturate-0 hover:scale-110 transition delay-300 duration shadow-lg shadow-sky-600"
+              ></div>
+            </div>
           </div>
         </section>
         {/*Tecnologías*/}
@@ -231,7 +232,7 @@ function App() {
 
               <div data-aos="zoom-in" class="m-4 lg:mx-20 lg:my-8">
                 <img
-                  class="transition delay-150 hover:scale-125"
+                  class="transition delay-150 hover:scale-125 rounded rounded-lg"
                   src="bootstrapicono.png"
                 ></img>
               </div>
@@ -433,7 +434,10 @@ function App() {
         </div>
         {/*#4 SECCION PROYECTOS*/}
         <div id="proyectos">
-          <div data-aos="fade-up" class="flex items-center justify-center">
+          <div
+            data-aos="fade-up"
+            class="flex items-center text-center justify-center"
+          >
             <h3 class="text-3xl text-slate-700 dark:text-white my-5 px-12 py-4 lg:py-2 font-bold tracking-widest border-y-4 border-sky-600">
               Mis Proyectos
             </h3>
@@ -604,7 +608,12 @@ function App() {
                 class="w-[90%] md:max-w-[600px] m-auto mt-12"
               >
                 <div>
-                <label for="email" class="block mb-2 text-sm font-medium text-black dark:text-white">Correo Electronico</label>
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-black dark:text-white"
+                  >
+                    Correo Electrónico
+                  </label>
                   <input
                     placeholder="info@ejemplo.com"
                     type="email"
@@ -617,7 +626,12 @@ function App() {
                 </div>
 
                 <div class="py-3">
-                <label for="email" class="block mb-2 text-sm font-medium text-black dark:text-white">Nombre</label>
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-black dark:text-white"
+                  >
+                    Nombre
+                  </label>
                   <input
                     type="text"
                     name="nombre"
@@ -630,7 +644,12 @@ function App() {
                 </div>
 
                 <div>
-                <label for="email" class="block mb-2 text-sm font-medium text-black dark:text-white">Mensaje</label>
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-black dark:text-white"
+                  >
+                    Mensaje
+                  </label>
                   <textarea
                     name="mensaje"
                     id="mensaje"
