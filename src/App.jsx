@@ -154,8 +154,8 @@ function App() {
           >
             <div class="border-4 border-sky-600 rounded-full ">
               <div
-                class="w-[300px] h-[300px] m-auto bg-[url('./img/fp.jpg')] bg-cover rounded-full lg:w-[480px] lg:h-[480px]
-            lg:bg-center lg:bg-no-repeat lg:bg[lenght:617px_840px] saturate-0 hover:scale-110 transition delay-300 duration shadow-lg shadow-sky-600"
+                class="w-[300px] h-[300px] m-auto bg-[url('./img/fotoportada.jpg')] bg-cover rounded-full lg:w-[480px] lg:h-[480px]
+            lg:bg-center lg:bg-no-repeat lg:bg[lenght:617px_840px]  hover:scale-110 transition delay-300 duration shadow-lg shadow-gray-600"
               ></div>
             </div>
           </div>
