@@ -9,7 +9,7 @@ import {
 } from "react-icons/bs";
 import { BiLinkExternal, BiLogoGithub } from "react-icons/bi";
 import { HiOutlineMail, HiOutlineClipboardList } from "react-icons/hi";
-import {TbPointFilled} from "react-icons/tb"
+import { TbPointFilled } from "react-icons/tb"
 
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
@@ -77,13 +77,11 @@ function App() {
               Juan José Rincón
             </p>
             <p class="text-3xl font-bold text-slate-500 datk:text-slate-600">
-              Me gusta desarrollar aplicaciones para mejorar y aplicar mis
-              conocimientos
+
+              Me apasiona desarrollar aplicaciones que optimicen procesos y potencien mis habilidades profesionales.
             </p>
             <p class="mt-5 text-lg ">
-              Actualmente, estudio Ingeniería de sistemas y computación, estoy
-              terminando mi carrera, y me gusta desarrollar aplicaciones de todo
-              tipo.
+              Soy estudiante de décimo semestre de Ingeniería de Sistemas y Computación, actualmente cursando una Especialización en Analítica de Datos. Me apasiona el desarrollo de aplicaciones y disfruto creando soluciones innovadoras para una amplia variedad de problemas, utilizando mis conocimientos en tecnología.
             </p>
             {/*REDES SOCIALES*/}
             <div class="py-6 flex flex-row ">
@@ -469,7 +467,7 @@ function App() {
                   <TbPointFilled class="flex-shrink-0 text-xl text-sky-600 " />
                   <h4>CEIBA SOL S.A.S.</h4>
                 </li>
-               
+
                 <article class="flex justify-between grid grid-rows-2 ">
                   <div class="flex flex-wrap">
                     <div>
@@ -539,8 +537,8 @@ function App() {
                     </div>
                   </div>
                 </a>
-   
-      
+
+
                 <li data-aos="fade-left" class="flex space-x-2 my-2 font-bold">
                   <TbPointFilled class="flex-shrink-0 text-xl text-sky-600 " />
                   <h4>APLICACIÓN CALCULO DE PRESUPUESTO</h4>
@@ -606,12 +604,12 @@ function App() {
                   </div>
                 </a>
 
-     
+
                 <li data-aos="fade-left" class="flex space-x-2 my-2 font-bold">
                   <TbPointFilled class="flex-shrink-0 text-xl text-sky-600 " />
                   <h4>LISTA DE FACTURAS</h4>
                 </li>
-         
+
                 <article class="flex justify-between grid grid-rows-2 ">
                   <div class="flex flex-wrap">
                     <div>
