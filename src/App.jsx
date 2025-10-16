@@ -81,7 +81,7 @@ function App() {
               Me apasiona desarrollar aplicaciones que optimicen procesos y potencien mis habilidades profesionales.
             </p>
             <p class="mt-5 text-lg ">
-              Soy estudiante de décimo semestre de Ingeniería de Sistemas y Computación, actualmente cursando una Especialización en Analítica de Datos. Me apasiona el desarrollo de aplicaciones y disfruto creando soluciones innovadoras para una amplia variedad de problemas, utilizando mis conocimientos en tecnología.
+              Soy Ingeniero de Sistemas y Computación, curse una Especialización en Analítica de Datos. Me apasiona el desarrollo de aplicaciones y disfruto creando soluciones innovadoras para una amplia variedad de problemas, utilizando mis conocimientos en tecnología.
             </p>
             {/*REDES SOCIALES*/}
             <div class="py-6 flex flex-row ">
