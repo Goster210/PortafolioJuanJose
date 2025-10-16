@@ -433,313 +433,275 @@ function App() {
           </div>
         </div>
         {/*#4 SECCION PROYECTOS*/}
-        <div id="proyectos">
-          {/*proyecto 1 */}
-          <div
-            data-aos="fade-up"
-            class="flex items-center text-center justify-center"
-          >
-            <h3 class="text-3xl text-slate-700 dark:text-white my-5 px-12 py-4 lg:py-2 font-bold tracking-widest border-y-4 border-sky-600">
-              Mis Proyectos
-            </h3>
+<div id="proyectos" className="w-full overflow-x-hidden">
+  {/* Título */}
+  <div
+    data-aos="fade-up"
+    className="flex items-center text-center justify-center"
+  >
+    <h3 className="text-3xl text-slate-700 dark:text-white my-5 px-12 py-4 lg:py-2 font-bold tracking-widest border-y-4 border-sky-600">
+      Mis Proyectos
+    </h3>
+  </div>
+
+  {/* Contenedor de proyectos */}
+  <section
+    className="my-6 mx-auto flex flex-col items-center justify-center gap-6 px-6 
+                md:grid md:grid-cols-2 md:gap-8 
+                w-full max-w-[1300px]"
+  >
+    {/* Proyecto 1 */}
+    <div
+      data-aos="fade-right"
+      className="border rounded-lg bg-white dark:bg-slate-800 m-2 w-full max-w-[550px]"
+    >
+      <div className="m-2">
+        <a href="https://ceiba-sol-fe.vercel.app/" target="_blank">
+          <div className="relative w-full flex justify-center">
+            <img
+              src="ceiba-sol.png"
+              alt=""
+              className="rounded-[15px] opacity-80 hover:opacity-100 transition delay-150"
+            />
+            <div className="absolute text-4xl text-black self-center opacity-0 hover:opacity-100 transition delay-150">
+              <BiLinkExternal />
+            </div>
           </div>
+        </a>
+        <li data-aos="fade-left" className="flex space-x-2 my-2 font-bold">
+          <TbPointFilled className="flex-shrink-0 text-xl text-sky-600" />
+          <h4>CEIBA SOL S.A.S.</h4>
+        </li>
 
-          <section class="my-6 flex flex-col items-center justify-center w-auto m-auto lg:flex-row lg:grid lg:grid-cols-2">
-            <div
-              data-aos="fade-right"
-              class="border-1 rounded-lg bg-white dark:bg-slate-800 m-5"
+        <article className="flex justify-between grid grid-rows-2">
+          <div className="flex flex-wrap">
+            <span className="bg-yellow-300 text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-yellow-300 border border-yellow-300">
+              Javascript
+            </span>
+            <span className="bg-[#0ac3b3] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-[#0ac3b3] border border-[#0ac3b3]">
+              TailwindCSS
+            </span>
+            <span className="bg-[#62ddfd] text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-[#62ddfd] border border-[#62ddfd]">
+              React
+            </span>
+            <span className="bg-[#509646] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-lime-500 border border-[#509646]">
+              MongoDB
+            </span>
+            <span className="bg-[#90c53f] text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-[#90c53f] border border-[#90c53f]">
+              NodeJs
+            </span>
+          </div>
+          <div className="flex flex-row">
+            <a
+              href="https://github.com/CeibaSol/"
+              target="_blank"
+              className="p-1 text-2xl text-slate-600 dark:text-slate-200"
             >
-              <div class="m-2">
-                <a href="https://ceiba-sol-fe.vercel.app/" target="_blank">
-                  <div class="relative w-full flex justify-center">
-                    <img
-                      src="ceiba-sol.png"
-                      alt=""
-                      class="rounded-[15px] opacity-80 hover:opacity-100 transition delay-150"
-                    />
-
-                    <div class="absolute text-4xl text-black self-center opacity-0 hover:opacity-100 transition delay-150">
-                      <BiLinkExternal></BiLinkExternal>
-                    </div>
-                  </div>
-                </a>
-                <li data-aos="fade-left" class="flex space-x-2 my-2 font-bold">
-                  <TbPointFilled class="flex-shrink-0 text-xl text-sky-600 " />
-                  <h4>CEIBA SOL S.A.S.</h4>
-                </li>
-
-                <article class="flex justify-between grid grid-rows-2 ">
-                  <div class="flex flex-wrap">
-                    <div>
-                      <span class="bg-yellow-300 text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-yellow-300 border border-yellow-300">
-                        Javascript
-                      </span>
-                    </div>
-                    <div>
-                      <span class=" bg-[#0ac3b3] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-[#0ac3b3] border border-[#0ac3b3]">
-                        TailwindCSS
-                      </span>
-                    </div>
-                    <div>
-                      <span class="bg-[#62ddfd] text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-[#62ddfd] border border-[#62ddfd]">
-                        React
-                      </span>
-                    </div>
-                    <div>
-                      <span class="bg-[#509646] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-lime-500 border border-[#509646]">
-                        MongoDB
-                      </span>
-                    </div>
-                    <div>
-                      <span class="bg-[#90c53f] text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-[#90c53f] border border-[#90c53f]">
-                        NodeJs
-                      </span>
-                    </div>
-                  </div>
-                  <div class="flex flex-row ">
-                    <a
-                      href="https://github.com/CeibaSol/"
-                      target="_blank"
-                      class="p-1 text-2xl text-slate-600 dark:text-slate-200"
-                    >
-                      <BiLogoGithub class="transition delay-150 hover:scale-125"></BiLogoGithub>
-                    </a>
-                    <a
-                      href="https://ceiba-sol-fe.vercel.app/"
-                      target="_blank"
-                      class="p-1 text-2xl text-slate-600 dark:text-slate-200"
-                    >
-                      <BiLinkExternal class="transition delay-150 hover:scale-125"></BiLinkExternal>
-                    </a>
-                  </div>
-                </article>
-              </div>
-            </div>
-            {/*PROYECTO 2 */}
-            <div
-              data-aos="fade-left"
-              class="border-1 rounded-lg bg-white dark:bg-slate-800 m-5"
+              <BiLogoGithub className="transition delay-150 hover:scale-125" />
+            </a>
+            <a
+              href="https://ceiba-sol-fe.vercel.app/"
+              target="_blank"
+              className="p-1 text-2xl text-slate-600 dark:text-slate-200"
             >
-              <div class="m-2">
-                <a
-                  href="https://presupuesto-app-zeta.vercel.app/"
-                  target="_blank"
-                >
-                  <div class="relative w-full flex justify-center">
-                    <img
-                      src="app-presupuesto.png"
-                      alt=""
-                      class="rounded-[15px] opacity-80 hover:opacity-100 transition delay-150"
-                    />
+              <BiLinkExternal className="transition delay-150 hover:scale-125" />
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
 
-                    <div class="absolute text-4xl text-black self-center opacity-0 hover:opacity-100 transition delay-150">
-                      <BiLinkExternal></BiLinkExternal>
-                    </div>
-                  </div>
-                </a>
-
-
-                <li data-aos="fade-left" class="flex space-x-2 my-2 font-bold">
-                  <TbPointFilled class="flex-shrink-0 text-xl text-sky-600 " />
-                  <h4>APLICACIÓN CALCULO DE PRESUPUESTO</h4>
-                </li>
-                <article class="flex justify-between grid grid-rows-2 ">
-                  <div class="flex flex-wrap">
-                    <div>
-                      <span class="bg-[#007acc] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-blue-200  border border-[#007acc]">
-                        TypeScript
-                      </span>
-                    </div>
-                    <div>
-                      <span class="bg-violet-800 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-violet-300 border border-violet-800">
-                        CSS
-                      </span>
-                    </div>
-                    <div>
-                      <span class="bg-[#c3002f] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-red-200 border border-[#c3002f]">
-                        Angular
-                      </span>
-                    </div>
-                  </div>
-
-                  <div class="flex flex-row ">
-                    <a
-                      href="https://github.com/Goster210/Presupuesto-app"
-                      target="_blank"
-                      class="p-1 text-2xl text-slate-600 dark:text-slate-200"
-                    >
-                      <BiLogoGithub class="transition delay-150 hover:scale-125"></BiLogoGithub>
-                    </a>
-                    <a
-                      href="https://presupuesto-app-zeta.vercel.app/"
-                      target="_blank"
-                      class="p-1 text-2xl text-slate-600 dark:text-slate-200"
-                    >
-                      <BiLinkExternal class="transition delay-150 hover:scale-125"></BiLinkExternal>
-                    </a>
-                  </div>
-                </article>
-              </div>
+    {/* Proyecto 2 */}
+    <div
+      data-aos="fade-left"
+      className="border rounded-lg bg-white dark:bg-slate-800 m-2 w-full max-w-[550px]"
+    >
+      <div className="m-2">
+        <a href="https://presupuesto-app-zeta.vercel.app/" target="_blank">
+          <div className="relative w-full flex justify-center">
+            <img
+              src="app-presupuesto.png"
+              alt=""
+              className="rounded-[15px] opacity-80 hover:opacity-100 transition delay-150"
+            />
+            <div className="absolute text-4xl text-black self-center opacity-0 hover:opacity-100 transition delay-150">
+              <BiLinkExternal />
             </div>
-            {/*proyecto 3 */}
-            <div
-              data-aos="fade-left"
-              class="border-1 rounded-lg bg-white dark:bg-slate-800 m-5"
+          </div>
+        </a>
+        <li data-aos="fade-left" className="flex space-x-2 my-2 font-bold">
+          <TbPointFilled className="flex-shrink-0 text-xl text-sky-600" />
+          <h4>APLICACIÓN CÁLCULO DE PRESUPUESTO</h4>
+        </li>
+
+        <article className="flex justify-between grid grid-rows-2">
+          <div className="flex flex-wrap">
+            <span className="bg-[#007acc] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-blue-200 border border-[#007acc]">
+              TypeScript
+            </span>
+            <span className="bg-violet-800 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-violet-300 border border-violet-800">
+              CSS
+            </span>
+            <span className="bg-[#c3002f] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-red-200 border border-[#c3002f]">
+              Angular
+            </span>
+          </div>
+          <div className="flex flex-row">
+            <a
+              href="https://github.com/Goster210/Presupuesto-app"
+              target="_blank"
+              className="p-1 text-2xl text-slate-600 dark:text-slate-200"
             >
-              <div class="m-2">
-                <a
-                  href="https://formulariodefacturas.vercel.app/"
-                  target="_blank"
-                >
-                  <div class="relative w-full flex justify-center">
-                    <img
-                      src="appFacturas.png"
-                      alt=""
-                      class="rounded-[15px] opacity-80 hover:opacity-100 transition delay-150"
-                    />
-
-                    <div class="absolute text-4xl text-black self-center opacity-0 hover:opacity-100 transition delay-150">
-                      <BiLinkExternal></BiLinkExternal>
-                    </div>
-                  </div>
-                </a>
-
-
-                <li data-aos="fade-left" class="flex space-x-2 my-2 font-bold">
-                  <TbPointFilled class="flex-shrink-0 text-xl text-sky-600 " />
-                  <h4>LISTA DE FACTURAS</h4>
-                </li>
-
-                <article class="flex justify-between grid grid-rows-2 ">
-                  <div class="flex flex-wrap">
-                    <div>
-                      <span class="bg-[#007acc] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-blue-200  border border-[#007acc]">
-                        TypeScript
-                      </span>
-                    </div>
-                    <div>
-                      <span class="bg-[#fb8c00] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-[#fb8c00] border border-[#fb8c00]">
-                        Angular Material
-                      </span>
-                    </div>
-                    <div>
-                      <span class="bg-[#c3002f] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-red-200 border border-[#c3002f]">
-                        Angular
-                      </span>
-                    </div>
-                    <div>
-                      <span class="bg-violet-800 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-violet-300 border border-violet-800">
-                        .NET core
-                      </span>
-                    </div>
-                  </div>
-
-                  <div class="flex flex-row ">
-                    <a
-                      href="https://github.com/Goster210/FrontPruebaMonoLegal"
-                      target="_blank"
-                      class="p-1 text-slate-600 dark:text-slate-200 transition delay-150 hover:scale-110"
-                    >
-                      FrontEnd
-                    </a>
-                    <a
-                      href="https://github.com/Goster210/FrontPruebaMonoLegal"
-                      target="_blank"
-                      class="p-1 text-2xl text-slate-600 dark:text-slate-200"
-                    >
-                      <BiLogoGithub class="transition delay-150 hover:scale-125"></BiLogoGithub>
-                    </a>
-                    <a
-                      href="https://github.com/Goster210/ApiMonoLegal"
-                      target="_blank"
-                      class="p-1 text-slate-600 dark:text-slate-200 transition delay-150 hover:scale-110"
-                    >
-                      BackEnd
-                    </a>
-
-                    <a
-                      href="https://github.com/Goster210/ApiMonoLegal"
-                      target="_blank"
-                      class="p-1 text-2xl text-slate-600 dark:text-slate-200"
-                    >
-                      <BiLogoGithub class="transition delay-150 hover:scale-125"></BiLogoGithub>
-                    </a>
-                    <a
-                      href="https://formulariodefacturas.vercel.app/"
-                      target="_blank"
-                      class="p-1 text-2xl text-slate-600 dark:text-slate-200"
-                    >
-                      <BiLinkExternal class="transition delay-150 hover:scale-125"></BiLinkExternal>
-                    </a>
-                  </div>
-                </article>
-              </div>
-            </div>
-            {/*proyecto 4 */}
-            <div
-              data-aos="fade-left"
-              class="border-1 rounded-lg bg-white dark:bg-slate-800 m-5"
+              <BiLogoGithub className="transition delay-150 hover:scale-125" />
+            </a>
+            <a
+              href="https://presupuesto-app-zeta.vercel.app/"
+              target="_blank"
+              className="p-1 text-2xl text-slate-600 dark:text-slate-200"
             >
-              <div class="m-2">
-                <a href="https://connect4-rosy.vercel.app/" target="_blank">
-                  <div class="relative w-full flex justify-center">
-                    <img
-                      src="connect4game.png"
-                      alt=""
-                      class="rounded-[15px] opacity-80 hover:opacity-100 transition delay-150"
-                    />
+              <BiLinkExternal className="transition delay-150 hover:scale-125" />
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
 
-                    <div class="absolute text-4xl text-black self-center opacity-0 hover:opacity-100 transition delay-150">
-                      <BiLinkExternal></BiLinkExternal>
-                    </div>
-                  </div>
-                </a>
-                <li data-aos="fade-left" class="flex space-x-2 my-2 font-bold">
-                  <TbPointFilled class="flex-shrink-0 text-xl text-sky-600 " />
-                  <h4>JUEGO - CONNECT 4</h4>
-                </li>
-                <article class="flex justify-between grid grid-rows-2 ">
-                  <div class="flex flex-wrap">
-                    <div>
-                      <span class="bg-yellow-300 text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-yellow-300 border border-yellow-300">
-                        Javascript
-                      </span>
-                    </div>
-
-                    <div>
-                      <span class="bg-[#62ddfd] text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-[#62ddfd] border border-[#62ddfd]">
-                        React
-                      </span>
-                    </div>
-                    <div>
-                      <span class="bg-violet-800 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-violet-300 border border-violet-800">
-                        CSS
-                      </span>
-                    </div>
-                  </div>
-
-                  <div class="flex flex-row ">
-                    <a
-                      href="https://github.com/Goster210/Connect4"
-                      target="_blank"
-                      class="p-1 text-2xl text-slate-600 dark:text-slate-200"
-                    >
-                      <BiLogoGithub class="transition delay-150 hover:scale-125"></BiLogoGithub>
-                    </a>
-
-                    <a
-                      href="https://connect4-rosy.vercel.app/"
-                      target="_blank"
-                      class="p-1 text-2xl text-slate-600 dark:text-slate-200"
-                    >
-                      <BiLinkExternal class="transition delay-150 hover:scale-125"></BiLinkExternal>
-                    </a>
-                  </div>
-                </article>
-              </div>
+    {/* Proyecto 3 */}
+    <div
+      data-aos="fade-left"
+      className="border rounded-lg bg-white dark:bg-slate-800 m-2 w-full max-w-[550px]"
+    >
+      <div className="m-2">
+        <a href="https://formulariodefacturas.vercel.app/" target="_blank">
+          <div className="relative w-full flex justify-center">
+            <img
+              src="appFacturas.png"
+              alt=""
+              className="rounded-[15px] opacity-80 hover:opacity-100 transition delay-150"
+            />
+            <div className="absolute text-4xl text-black self-center opacity-0 hover:opacity-100 transition delay-150">
+              <BiLinkExternal />
             </div>
-          </section>
-        </div>
+          </div>
+        </a>
+        <li data-aos="fade-left" className="flex space-x-2 my-2 font-bold">
+          <TbPointFilled className="flex-shrink-0 text-xl text-sky-600" />
+          <h4>LISTA DE FACTURAS</h4>
+        </li>
+
+        <article className="flex justify-between grid grid-rows-2">
+          <div className="flex flex-wrap">
+            <span className="bg-[#007acc] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-blue-200 border border-[#007acc]">
+              TypeScript
+            </span>
+            <span className="bg-[#fb8c00] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-[#fb8c00] border border-[#fb8c00]">
+              Angular Material
+            </span>
+            <span className="bg-[#c3002f] text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-red-200 border border-[#c3002f]">
+              Angular
+            </span>
+            <span className="bg-violet-800 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-violet-300 border border-violet-800">
+              .NET Core
+            </span>
+          </div>
+          <div className="flex flex-row">
+            <a
+              href="https://github.com/Goster210/FrontPruebaMonoLegal"
+              target="_blank"
+              className="p-1 text-slate-600 dark:text-slate-200 transition delay-150 hover:scale-110"
+            >
+              FrontEnd
+            </a>
+            <a
+              href="https://github.com/Goster210/FrontPruebaMonoLegal"
+              target="_blank"
+              className="p-1 text-2xl text-slate-600 dark:text-slate-200"
+            >
+              <BiLogoGithub className="transition delay-150 hover:scale-125" />
+            </a>
+            <a
+              href="https://github.com/Goster210/ApiMonoLegal"
+              target="_blank"
+              className="p-1 text-slate-600 dark:text-slate-200 transition delay-150 hover:scale-110"
+            >
+              BackEnd
+            </a>
+            <a
+              href="https://github.com/Goster210/ApiMonoLegal"
+              target="_blank"
+              className="p-1 text-2xl text-slate-600 dark:text-slate-200"
+            >
+              <BiLogoGithub className="transition delay-150 hover:scale-125" />
+            </a>
+            <a
+              href="https://formulariodefacturas.vercel.app/"
+              target="_blank"
+              className="p-1 text-2xl text-slate-600 dark:text-slate-200"
+            >
+              <BiLinkExternal className="transition delay-150 hover:scale-125" />
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    {/* Proyecto 4 */}
+    <div
+      data-aos="fade-left"
+      className="border rounded-lg bg-white dark:bg-slate-800 m-2 w-full max-w-[550px]"
+    >
+      <div className="m-2">
+        <a href="https://connect4-rosy.vercel.app/" target="_blank">
+          <div className="relative w-full flex justify-center">
+            <img
+              src="connect4game.png"
+              alt=""
+              className="rounded-[15px] opacity-80 hover:opacity-100 transition delay-150"
+            />
+            <div className="absolute text-4xl text-black self-center opacity-0 hover:opacity-100 transition delay-150">
+              <BiLinkExternal />
+            </div>
+          </div>
+        </a>
+        <li data-aos="fade-left" className="flex space-x-2 my-2 font-bold">
+          <TbPointFilled className="flex-shrink-0 text-xl text-sky-600" />
+          <h4>JUEGO - CONNECT 4</h4>
+        </li>
+
+        <article className="flex justify-between grid grid-rows-2">
+          <div className="flex flex-wrap">
+            <span className="bg-yellow-300 text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-yellow-300 border border-yellow-300">
+              Javascript
+            </span>
+            <span className="bg-[#62ddfd] text-black text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-[#62ddfd] border border-[#62ddfd]">
+              React
+            </span>
+            <span className="bg-violet-800 text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-slate-800 dark:text-violet-300 border border-violet-800">
+              CSS
+            </span>
+          </div>
+          <div className="flex flex-row">
+            <a
+              href="https://github.com/Goster210/Connect4"
+              target="_blank"
+              className="p-1 text-2xl text-slate-600 dark:text-slate-200"
+            >
+              <BiLogoGithub className="transition delay-150 hover:scale-125" />
+            </a>
+            <a
+              href="https://connect4-rosy.vercel.app/"
+              target="_blank"
+              className="p-1 text-2xl text-slate-600 dark:text-slate-200"
+            >
+              <BiLinkExternal className="transition delay-150 hover:scale-125" />
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</div>
+
         {/*#4 SECCION CONTACTOS*/}
         <div id="contactos">
           <div data-aos="fade-up">
